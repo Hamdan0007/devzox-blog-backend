@@ -1,17 +1,15 @@
 {
   "version": 2,
-  "name":"devzox",
   "builds": [
     {
-      "src": "./api/app.js",
-      "use": "@vercel/node"
-    
+      "src": "/api/app.js",
+      "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/app.js"
+      "dest": "/api/app.js"
     }
   ]
 }
